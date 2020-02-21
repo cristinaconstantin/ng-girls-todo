@@ -1,0 +1,12 @@
+
+<div *ngIf="taskItem">
+      <input #saveUserNameCheckBox
+        type="checkbox" class="strikethrough"
+        [checked]="taskItem.taskStatus"
+        (change)="!taskItem.taskStatus"
+        />
+
+      <span>{{taskItem.taskItem}}</span>
+      <button (click)="deleteValue()">Remove</button>
+
+</div>

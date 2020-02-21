@@ -1,0 +1,12 @@
+
+  <app-todo-entry *ngFor="let item of tasksToDo"
+    [taskItem]="item"
+    (delete)="deleteValue($event)">
+  </app-todo-entry>
+
+
+<p>
+<input [value]="inputText" (keyup)="inputChange($event.target.value)" >
+<button (click)="saveValue()">Save</button>
+</p>
+
